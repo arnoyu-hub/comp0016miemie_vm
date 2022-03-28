@@ -90,10 +90,10 @@ def nlp_manager(nlp_dictionary: dict) -> None:
          nlp_actions.validate_SDG_SVM()
      if nlp_dictionary.get("validate_ha_svm"):
          nlp_actions.validate_HA_SVM()
-     if nlp_dictionary.get("run_SDG_TO_CSV"):
-         nlp_actions.run_SDG_TO_CSV()
-     if nlp_dictionary.get("run_SDG_TO_CSV2"):
-         nlp_actions.run_SDG_TO_CSV2()
+#     if nlp_dictionary.get("run_SDG_TO_CSV"):
+#         nlp_actions.run_SDG_TO_CSV()
+  #   if nlp_dictionary.get("run_SDG_TO_CSV2"):
+   #      nlp_actions.run_SDG_TO_CSV2()
          
 def sync_manager(sync_dictionary: dict) -> None:
     """
