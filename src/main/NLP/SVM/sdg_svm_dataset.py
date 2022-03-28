@@ -152,7 +152,7 @@ class SdgSvmDataset():
     def run(self, modules: bool, publications: bool) -> None:
         """
             Tags the modules and/or publications with their most related SDG, if related to one at all, and combines them into a single dataframe.
-            Serializes the resulting dataframe as a pickle file.
+            Serializes the resulting dataframe as a pickle file and csv file.
         """
         df = pd.DataFrame() # column format of dataframe is {ID, Description, SDG} where ID is either Module_ID or DOI.
         if modules:
@@ -161,5 +161,5 @@ class SdgSvmDataset():
             df = df.append(self.tag_publications(), ignore_index=True)
 
         df = df.reset_index()
-        #df.to_pickle(self.svm_dataset)
+        df.to_pickle(self.svm_dataset)
         df.to_csv("main/NLP/SVM/dataset.csv")
