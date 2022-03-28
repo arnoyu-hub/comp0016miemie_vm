@@ -23,8 +23,8 @@ from main.NLP.SVM.sdg_svm import SdgSvm
 from main.NLP.SVM.ihe_svm import IheSvm
 from main.NLP.SVM.ha_svm import HaSvm
 
-from main.NLP.parser_sdg_to_csv.sdg_csv import SDG_CSV_RESULTS
-from main.NLP.parser_sdg_to_csv.sdg_csv2 import SDG_CSV_RESULTS2
+#from main.NLP.parser_sdg_to_csv.sdg_csv import SDG_CSV_RESULTS
+#from main.NLP.parser_sdg_to_csv.sdg_csv2 import SDG_CSV_RESULTS2
 
 
 class NLP_SECTION():
@@ -136,14 +136,14 @@ class NLP_SECTION():
         """
         HaSvm().run()
         
-    def run_SDG_TO_CSV(self) -> None:
+    #def run_SDG_TO_CSV(self) -> None:
         """
             Runs SVM model training for Modules & Publications SDG classification
         """
-        SDG_CSV_RESULTS().run()
+      #  SDG_CSV_RESULTS().run()
         
-    def run_SDG_TO_CSV2(self) -> None:
+   # def run_SDG_TO_CSV2(self) -> None:
         """
             Runs SVM model training for Modules & Publications SDG classification
         """
-        SDG_CSV_RESULTS2().run()
+     #   SDG_CSV_RESULTS2().run()
