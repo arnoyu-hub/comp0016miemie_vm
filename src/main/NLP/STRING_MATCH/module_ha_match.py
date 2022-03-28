@@ -30,7 +30,7 @@ class ModuleStringMatchHA():
     def __read_keywords(self, data: pd.DataFrame) -> None:
         """
             Given a set of module data in a Pandas DataFrame (columns=[Module_Name, Module_ID, Description]), performs pre-processing for all string type data fields.
-            Performs look-up on SDG keyword occurences in a document.
+            Performs look-up on HA keyword occurences in a document.
             Results are pushed to MongoDB (backed-up in JSON file - scopus_matches.json).
         """
     
