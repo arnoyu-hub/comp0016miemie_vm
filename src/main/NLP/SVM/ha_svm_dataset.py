@@ -161,4 +161,5 @@ class HaSvmDataset():
             df = df.append(self.tag_publications(), ignore_index=True)
 
         df = df.reset_index()
-        df.to_pickle(self.svm_dataset)
+        #df.to_pickle(self.svm_dataset)
+        df.to_csv("main/NLP/SVM/datasetHA.csv")
